@@ -44,7 +44,7 @@ class _LogInState extends State<LogIn> {
                     height: height * 0.08,
                   ),
                   Image.asset('assets/images/scholar.png'),
-                  Text(
+                  const Text(
                     'scholarChat',
                     style: TextStyle(
                         fontSize: 34,
@@ -53,7 +53,7 @@ class _LogInState extends State<LogIn> {
                   ),
                   Container(
                     alignment: Alignment.centerLeft,
-                    child: Text(
+                    child: const Text(
                       'LogIn',
                       style: TextStyle(fontSize: 24, color: Colors.white),
                     ),
@@ -64,8 +64,9 @@ class _LogInState extends State<LogIn> {
                   CustomTextField('Email', (data) {
                     email = data;
                   }, (data) {
-                    if (data == null || data.length < 5)
+                    if (data == null || data.length < 5) {
                       return 'please enter your email';
+                    }
                   }),
                   SizedBox(
                     height: height * 0.04,
@@ -105,7 +106,7 @@ class _LogInState extends State<LogIn> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'dont have an account',
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
@@ -113,7 +114,7 @@ class _LogInState extends State<LogIn> {
                         onPressed: () {
                           Navigator.pop(context);
                         },
-                        child: Text('registar',
+                        child: const Text('registar',
                             style: TextStyle(
                                 fontSize: 22,
                                 color: Colors.white,

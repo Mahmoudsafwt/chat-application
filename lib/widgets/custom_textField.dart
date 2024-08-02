@@ -19,10 +19,10 @@ class CustomTextField extends StatelessWidget {
       onChanged: onChanged,
       decoration: InputDecoration(
           hintText: hintText,
-          hintStyle: TextStyle(color: Colors.white),
-          enabledBorder: OutlineInputBorder(
+          hintStyle: const TextStyle(color: Colors.white),
+          enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.white)
-          ),border: OutlineInputBorder(
+          ),border: const OutlineInputBorder(
           borderSide: BorderSide(color: Colors.white)
       )
 

@@ -34,7 +34,7 @@ class ChatScreen extends StatelessWidget {
                       kLogo,
                       height: 60,
                     ),
-                    Text(
+                    const Text(
                       'chat',
                       style: TextStyle(color: Colors.white),
                     ),
@@ -58,7 +58,7 @@ class ChatScreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                    margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                     child: TextField(
                       controller: controller,
                       decoration: InputDecoration(
@@ -76,7 +76,7 @@ class ChatScreen extends StatelessWidget {
                                   duration: const Duration(milliseconds: 500),
                                 );
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.send,
                                 color: kPrimaryColor,
                                 size: 32,
@@ -85,7 +85,7 @@ class ChatScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(16)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(16),
-                              borderSide: BorderSide(color: kPrimaryColor))),
+                              borderSide: const BorderSide(color: kPrimaryColor))),
                     ),
                   )
                 ],

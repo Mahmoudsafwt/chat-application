@@ -18,7 +18,8 @@ class ChatApp extends StatelessWidget{
 
 
 
- Widget build(BuildContext){
+ @override
+  Widget build(BuildContext){
 
    return MaterialApp(
      debugShowCheckedModeBanner: false,
